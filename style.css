@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    padding-top: 30px;
+}
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+.header__link{
+    color: #36536b;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    text-decoration: none;
+    opacity: 0.7;
+}
+.header__btn{
+    max-width: 200px;
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    background: #ba4270;
+    border: none;
+    padding: 10px 10px;
+    color: #fbfcfe;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.12px;
+}
+.header__burger{
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.text__box{
+    max-width: 546px;
+    width: 100%;
+}
+.hero__text{
+    color: #36536b;
+    font-family: DM Serif Display;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.55px;
+    margin-top: 152px;
+}
+.hero__title{
+    color: #36536b;
+font-family: DM Serif Display;
+font-size: 48px;
+font-weight: 400;
+line-height: 56px;
+letter-spacing: -0.37px;
+text-align: left;
+}
+.hero__text1{
+    color: #6c8294;
+font-family: "Public Sans";
+font-size: 15px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+}
+.text__box1{
+    max-width: 445px;
+    width: 100%;
+    padding-top: 60px;
+}
+@media(max-width:700px){
+    .wrapper{
+        flex-direction: column;
+    }
+    .wr{
+        flex-direction: column;
+    }
+    .hero__text{
+        margin: 0 auto;
+    }
+    .hero__title{
+        margin: 0 auto;
+    }
+    .text__box1{
+        padding: 0;
+    }
+    .hero__text1{
+        margin: 0 auto;
+    }
+}
+@media (max-width: 615px) {
+    .header__burger{
+        display: block;
+    }
+    .header__list{
+        display: none;
+    }
+}
+.header__link:hover{
+    color: salmon;
+    transition: 0.5s ease-in-out;
+}
+.header__btn:hover{
+    background-color: rgb(186, 66, 112);
+    box-shadow: 10px 10px 25px -10px rgb(186, 66, 112);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9fbfc;
+  }
+  
+  .icons-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px 0;
+  }
+  
+  .icon-card {
+    text-align: center;
+    flex: 1;
+    max-width: 150px;
+  }
+  
+  .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-color: #2a486a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .personal-finance {
+    background-image: url('./images/Combined\ Shape.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .banking-coverage {
+    background-image: url('./images/Combined\ Shape\ \(1\).png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .consumer-payments {
+    background-image: url('./images/Combined\ Shape\ \(2\).png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .icons-section p {
+    color: #2a486a;
+    font-weight: bold;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #26303a;
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  .footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .footer-nav a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .footer-nav a:hover {
+    text-decoration: rgb(186, 66, 112);
+  }
+  
+  .footer-socials a {
+    margin: 0 5px;
+  }
+  
+  .footer-socials img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .icons-section {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  
+    .icon-card {
+      max-width: none;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-nav {
+      margin: 10px 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
